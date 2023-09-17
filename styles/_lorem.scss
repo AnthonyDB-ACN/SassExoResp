@@ -1,0 +1,42 @@
+.lorem{
+  margin-top: 3rem;
+    .container{
+        display: grid;
+        grid-template-rows: 1fr;
+        align-items: center;
+        gap:5rem;
+
+        @include laptop13{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &-text {
+        position: relative;
+        text-align: center;
+        @include laptop13 {
+          max-width: 80%;
+          text-align: left;
+        }
+    
+        &::after {
+          @extend .imagesFond;
+          width: 13.125rem;
+          height: 13.125rem;
+          z-index: -1;
+          top: 1.875rem;
+          right: 0;
+          background-image: url("/Images/Cercle.png");
+        }
+      }
+  
+      .suptitle,.section-title,.lead{
+        margin-bottom: 1rem;
+      }
+
+      .lead {
+        font-size: 1.25rem;
+        line-height: 2rem;
+      }
+    
+}

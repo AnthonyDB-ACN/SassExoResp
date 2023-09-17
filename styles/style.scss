@@ -1,0 +1,20 @@
+@import "01Variables";
+@import "02Mixins";
+@import "03Reset";
+@import "common";
+
+
+
+body{
+    font-family: $barlow;
+    background: $body-bg;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: $white;
+}
+
+@import "header";
+@import "articleOne";
+@import "lorem";
+@import "ipsum";
+@import "footer";

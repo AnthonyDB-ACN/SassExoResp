@@ -1,0 +1,25 @@
+.header{
+    padding: 2rem 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        span{
+            color: $pink;
+        }
+
+        .nav li{
+            display: inline;
+            padding: 0.5rem;
+        }
+    }
+
+
+}
